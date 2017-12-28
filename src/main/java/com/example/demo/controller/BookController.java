@@ -20,13 +20,13 @@ public class BookController {
 
     @RequestMapping(method = RequestMethod.POST)
     public BookEntity addBook(@RequestBody BookEntity bookEntity) {
-        BookEntity newBook = bookService.addBook(bookEntity);
+        BookEntity newBook = bookService.addBook1(bookEntity);
         return newBook;
     }
 
     @RequestMapping(method = RequestMethod.PUT)
     public BookEntity updateBook(@RequestBody BookEntity bookEntity) {
-        BookEntity updatedBook = bookService.addBook(bookEntity);
+        BookEntity updatedBook = bookService.addBook1(bookEntity);
         return updatedBook;
     }
 
