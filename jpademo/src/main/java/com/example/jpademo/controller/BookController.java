@@ -19,6 +19,7 @@ public class BookController {
     private BookService bookService;
 
     @RequestMapping(method = RequestMethod.POST)
+    //@AuthorityAnnotation(name = "admin")
     public BookEntity addBook(@RequestBody BookEntity bookEntity) {
         BookEntity newBook = bookService.addBook1(bookEntity);
         return newBook;

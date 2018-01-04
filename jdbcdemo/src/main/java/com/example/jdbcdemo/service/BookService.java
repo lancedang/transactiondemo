@@ -18,9 +18,15 @@ public class BookService {
         return bookDao.findAllBooks();
     }
 
+    public BookEntity getTheLastBook() {
+        return bookDao.findTheLastBook();
+    }
+
     @Transactional
-    public BookEntity addBook(String bookName) {
-        return bookDao.addBook(bookName);
+    public void addBook(String bookName) {
+        bookDao.addBook(bookName);
+        String fuse = null;
+        System.out.println(fuse.equals(""));
     }
 
 }
