@@ -68,11 +68,7 @@
             <version>${lombok.version}</version>
         </dependency>
 
-<!--        <dependency>
-            <groupId>com.ppdai.authority</groupId>
-            <artifactId>authoritymanager</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>-->
+
     </dependencies>
 
     <build>
